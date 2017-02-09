@@ -1,4 +1,7 @@
-# import the Flask class from the flask module
+# Created by Alexander Wheadon
+# 02/08/17
+# Assignment 1
+
 from flask import Flask, render_template, redirect, \
     url_for, request, session, flash
 from functools import wraps
