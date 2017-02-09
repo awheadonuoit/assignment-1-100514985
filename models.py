@@ -1,3 +1,7 @@
+# Created by Alexander Wheadon
+# 02/08/17
+# Assignment 1
+
 from app import db
 
 
