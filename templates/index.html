@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+{% extends "base.html" %}
+{% block content %}
+<!-- Title of page -->
+<h1>Welcome to the messenger!</h1>
+<br>
+<p>Click <a href="/logout">here</a> to logout.</p>
+<br><br>
+<!-- Create List of previous messages -->
+<h3>Messages:</h3>
+{% for post in posts %}
+  <strong>User:</strong> {{ post.user }} <br>
+  <strong>Message:</strong> {{ post.message }} <br> <br>
+{% endfor %}
+<!-- Allow user to enter and post a message -->
+<form action="" method="post">
+	<input type="text" placeholder="Enter message" name="message" value="{{
+          request.form.message }}">
+	<input class="btn btn-default" type="submit" value="create"> <br>
+</form>
+{% endblock %}
